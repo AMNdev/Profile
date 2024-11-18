@@ -52,31 +52,32 @@ html {
 }
 
 .header .img {
-  background: var(--bg1);
-  width: 150px; 
+  width: 150px;
   height: 150px;
   border-radius: 50%;
   transition: .3s ease-in-out;
-  box-shadow: 
-    0 4px 6px rgba(0, 0, 0, 0.3), 
-    0 0 10px var(--color2), 
-    0 0 20px var(--color4); 
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.3),
+    0 0 10px var(--color2),
+    0 0 20px var(--color4);
 
 }
+
 .header .img:hover {
   scale: 1.3;
   transform: rotate(355deg);
-  box-shadow: 
-  0 8px 10px rgba(0, 0, 0, 0.4), 
-  0 0 20px var(--color2), 
-  0 0 40px var(--color4);
+  box-shadow:
+    0 8px 10px rgba(0, 0, 0, 0.4),
+    0 0 20px var(--color2),
+    0 0 40px var(--color4);
 }
 
 .header .a {
   font-size: var(--big-font-size);
   transition: .3s ease;
 }
-.header .a:hover{
+
+.header .a:hover {
   color: var(--color4);
 }
 
@@ -233,19 +234,16 @@ html {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.2);
-  /* display: hidden; */
   display: grid;
   place-items: center;
   opacity: 0;
   transition: all 0.4s ease-in-out;
-  
 }
 
-.modal.visible{
+.modal.visible {
   left: 0;
-  /* display: grid; */
   opacity: 1;
-  }
+}
 
 .modal::before {
   content: '';
@@ -256,18 +254,14 @@ html {
   height: 100%;
   z-index: -1;
   background: var(--color1);
-  /* transition: all 5s ease; */
   opacity: .9;
-  /* transition: all 2s; */
 }
 
 .modal-content {
-  
   border-radius: 5px;
   background-color: var(--color3);
   max-width: 60%;
   max-height: 100vh;
-
   overflow: hidden;
   text-align: center;
 }
@@ -320,56 +314,123 @@ html {
   cursor: pointer;
 }
 
-
-
-
-
+/* ****************************************************** */
 @media (max-width: 660px) {
-  /* Estilos específicos */
+  :root {
+    --big-font-size: 1.9rem;
+    --normal-font-size: 1.1rem;
+  }
+
   .header {
     position: relative;
     width: 100%;
     height: max-content;
     padding: 1rem;
   }
-  
+
   .header .img {
     width: 100px;
     height: 100px;
     margin-bottom: 1rem;
   }
-  
+
   .header .a {
     margin-bottom: 1rem;
   }
-  
+
   .header .h3 {
     margin-bottom: 1rem;
   }
-     
 
-
-
-
-
-  
-  .main{
+  .main {
+    border-left: none;
+    padding: 1rem;
     position: relative;
+    width: 100%;
+    margin: 0;
   }
 
+  .section {
+    min-height: auto;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 
+  .section .h2 {
+    margin: 1rem;
+  }
 
+  .section .p {
+    margin: 0 auto;
+    width: 100%;
+  }
 
+  .section .a {
+    display: none;
+  }
 
+  .skills {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    max-width: 100%;
+    justify-content: space-evenly;
+  }
 
+  .skills .img {
+    height: 45px;
+    margin: .5rem;
+  }
 
+  .works {
+    margin: 0;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
 
+  .close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
 
+  .works .article {
+    min-width: 200px;
+    width: 100%;
+  }
 
+  .modal-content {
+    max-width: 90%;
+    max-height: 100vh;
+  }
 
+  .modal-content .img {
+    margin: 1rem auto;
+    max-width: 90%;
+    max-height: 50vh;
+  }
+
+  .modal-content #description {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .modal-content .modal-links {
+    margin-bottom: .5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .modal-content a, i {
+    padding: 0;
+    transition: .3s ease;
+  }
 
   .footer {
     position: relative;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
   }
-  
 }
