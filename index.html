@@ -27,71 +27,45 @@
 
   <main class="main">
 
-    <div class="seccion">
+    <section class="section">
+      <h2 class="h2">Antonio Márquez</h2>
+      <p class="p">
+        I'm an agricultural engineer with experience in finance and real estate,
+        but I want to build stuff with my own hands. So, I'm becoming a
+        self-taught frontend depeloper. Trying, making mistakes, learning from
+        them, repeating. I love reading, sport, travelling, and, above all, my
+        family.
+      </p>
+      <div class="skills">
+        <img class="img" src="./assets/html-logo.png" alt="html logo" />
+        <img class="img" src="./assets/css-logo.png" alt="css logo" />
+        <img class="img" src="./assets/javascript-logo.png" alt="javascript logo" />
+        <img class="img" src="./assets/angular-logo.png" alt="angular logo" />
+        <img class="img" src="./assets/Typescript-logo.png" alt="Typesrcript logo" />
+        <img class="img" src="./assets/nodeJS-logo.png" alt="nodeJS logo" />
+        <img class="img" src="./assets/express-logo.png" alt="Express logo" />
+        <img class="img" src="./assets/mongodb-logo-cuadrado.png" alt="MongoDB logo" />
+        <img class="img" src="./assets/bootstrap-logo.png" alt="Bootrstrap logo" />
+        <img class="img" src="./assets/sass-logo.png" alt="Sass logo" />
+        <img class="img" src="./assets/github-cuadrado-logo.png" alt="Github logo" />
+        <img class="img" src="./assets/jQuery-logo.png" alt="jQuery logo" />
+      </div>
+
+      <a href="#works" class="a">more...</a>
+    </section>
 
 
-      <!-- <div class="grid-item">
-        <img src="./assets/html-logo.png" alt="html logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/css-logo.png" alt="css logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/javascript-logo.png" alt="javascript logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/angular-logo.png" alt="angular logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/Typescript-logo.png" alt="Typesrcript logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/nodeJS-logo.png" alt="nodeJS logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/express-logo.png" alt="Express logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/mongodb-logo-cuadrado.png" alt="MongoDB logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/bootstrap-logo.png" alt="Bootrstrap logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/sass-logo.png" alt="Sass logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/github-cuadrado-logo.png" alt="Github logo" />
-      </div>
-      <div class="grid-item">
-        <img src="./assets/jQuery-logo.png" alt="jQuery logo" />
-      </div> -->
-
-
-
-      <section class="section">
-        <h2 class="h2">Antonio Márquez</h2>
-        <p class="p">
-          I'm an agricultural engineer with experience in finance and real estate,
-          but I want to build stuff with my own hands. So, I'm becoming a
-          self-taught frontend depeloper. Trying, making mistakes, learning from
-          them, repeating. I love reading, sport, travelling, and, above all, my
-          family.
-        </p>
-      </section>
-    </div>
-
-
-    <section class="seccion" id="works">
+    <section class="section" id="works">
 
       <h2 class="h2">Trabajos</h2>
 
 
-      <div class="grid">
-        <article class="article">
-          <img src="#" alt="imagen" class="img" loading="lazy"></img>
-          <h4 class="h4">nombre de trabajo</h4>
-        </article>
+      <div class="works">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span id="closeModal" class="close">&times;</span>
+        </div>
+
       </div>
     </section>
 
@@ -109,7 +83,8 @@
         </a>
       </li>
       <li class="li">
-        <a class="a" rel="nopener noreferrer" href="mailto:amarqueznovella@hotmail.com?subject=I_saw_your porfolio" target="_blank">
+        <a class="a" rel="nopener noreferrer" href="mailto:amarqueznovella@hotmail.com?subject=I_saw_your porfolio"
+          target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="svg" viewBox="0 0 16 16">
             <path
               d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
@@ -129,6 +104,8 @@
 
 
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
