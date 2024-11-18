@@ -55,6 +55,12 @@ html {
   background: var(--bg1);
   width: 40%;
   border-radius: 100%;
+  transition: .3s ease-in-out;
+}
+.header .img:hover {
+  scale: 1.3;
+  transform: rotate(355deg);
+
 }
 
 .header .a {
