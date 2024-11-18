@@ -53,14 +53,23 @@ html {
 
 .header .img {
   background: var(--bg1);
-  width: 40%;
-  border-radius: 100%;
+  width: 150px; 
+  height: 150px;
+  border-radius: 50%;
   transition: .3s ease-in-out;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.3), 
+    0 0 10px var(--color2), 
+    0 0 20px var(--color4); 
+
 }
 .header .img:hover {
   scale: 1.3;
   transform: rotate(355deg);
-
+  box-shadow: 
+  0 8px 10px rgba(0, 0, 0, 0.4), 
+  0 0 20px var(--color2), 
+  0 0 40px var(--color4);
 }
 
 .header .a {
@@ -179,11 +188,6 @@ html {
 
 }
 
-
-
-
-
-
 .footer {
   position: fixed;
   bottom: 0;
@@ -198,7 +202,6 @@ html {
 
 .footer .ul {
   width: 100%;
-  /* background-color: var(--color1); */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -217,6 +220,7 @@ html {
 }
 
 .footer .a:hover .svg {
+  scale: 1.2;
   fill: var(--color4);
 }
 
@@ -314,4 +318,58 @@ html {
   color: var(--color4);
   text-decoration: none;
   cursor: pointer;
+}
+
+
+
+
+
+@media (max-width: 660px) {
+  /* Estilos específicos */
+  .header {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    padding: 1rem;
+  }
+  
+  .header .img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .header .a {
+    margin-bottom: 1rem;
+  }
+  
+  .header .h3 {
+    margin-bottom: 1rem;
+  }
+     
+
+
+
+
+
+  
+  .main{
+    position: relative;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer {
+    position: relative;
+  }
+  
 }
