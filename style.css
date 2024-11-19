@@ -230,11 +230,13 @@ html {
   width: var(--big-font-size);
   height: var(--big-font-size);
   transition: .3s ease;
+  filter: drop-shadow(3px 3px 5px var(--color3)) drop-shadow(-2px -2px 4px var(--color2));
 }
 
 .footer .a:hover .svg {
-  scale: 1.2;
+  scale: 1.3;
   fill: var(--color4);
+  filter: drop-shadow(4px 4px 8px var(--color1)) drop-shadow(-4px -4px 8px var(--color4));
 }
 
 .modal {
