@@ -277,7 +277,7 @@ html {
   background-color: var(--color3);
   max-width: 60%;
   max-height: 100vh;
-  overflow: hidden;
+  overflow: auto;
   text-align: center;
 }
 
